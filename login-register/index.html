@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="img-login">
+                <img src="./asset/img/119234579_169457918065236_755533166268046471_n-1.jpg" alt="">
+            </div>
+            <div class="form">
+                <div class="top-form">
+                    <img src="./asset/img/42b431df4d2e7424df1d501beabb799a.png" alt="">
+                    <span>UI Unicorn</span>
+                </div>
+                <form action="" onsubmit="event.preventDefault()">
+                    <div class="input-form">
+                        <h3>Nice to see you again</h3>
+                        <div class="item-input-form">
+                            <div class="input-item">
+                                <label for="" class="input-label"> login </label>
+                                <input type="text" placeholder="Email or phone number" class="input-text">
+                            </div>
+                            <div class="input-item">
+                                <label for="" class="input-label"> password </label>
+                                <div class="password-form">
+                                    <input type="password" placeholder="Enter password" class="input-password">
+                                    <i class="fa-solid fa-eye eye-open" onclick="totalPassword()" style="display: none;"></i>
+                                    <i class="fa-regular fa-eye-slash eye-close" onclick="totalPassword()"></i>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="switcher">
+                                    <input type="checkbox" id="check">
+                                    <label for="check" class="swicht"></label>
+                                    <label for="">Remember me</label>
+                                </div>
+                                <div class="forgot-password">
+                                    <a href="">Forgot-password?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-sign-in">
+                        <button>Sign in</button>
+                    </div>
+                    <hr style="width: 100%; height: 0.5px; color: #E5E5E5;">
+                    <div class="btn-or-sign-in">
+                        <button><i class="fa-brands fa-google"></i>Or sign in witch Google</button>
+                    </div>
+                    <div class="bottom-form">
+                        <span>Dont have an account?</span>
+                        <a href="">Sign up now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./asset/js/main.js"></script>
+</body>
+</html>
