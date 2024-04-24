@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.img-login{
+    width: 70%;
+    height: 100%;
+}
+.img-login img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.form{
+    width: 30%;
+    height: 100%;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.form .top-form{
+    height: 48px;
+    display: flex;
+    margin-right: auto;
+}
+
+.form .top-form img{
+    width: 48px;
+    height: 48px;
+}
+
+.form .top-form span{
+    line-height: 48px;
+    color: #1A1A1A;
+    margin-left: 10px;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.form form h3{
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 20px;
+    color: #1A1A1A;
+}
+
+.form form .input-label{
+    padding: 0 16px 0 16px;
+    width: 100%;
+    height: 12px;
+    font-size: 11px;
+    font-family: SF Pro Display;
+    font-weight: 400;
+}
+.form form .input-password,
+.form form .input-text{
+    width: 100%;
+    height: 48px;
+    padding: 8px 8px 8px 16px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Roboto;
+    color: #808080;
+    background-color: #E5E5E5;
+    border: 0.5px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form form .input-form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.form form .input-form .item-input-form {
+    display: grid;
+    gap: 16px;
+}
+.form form .input-form .item-input-form .input-item{
+    display: grid;
+    gap: 8px;
+}
+.input-form .input-item .password-form{
+    display: flex;
+    position: relative;
+}
+.input-form .input-item .password-form i{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 8px;
+}
+.feature{
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    width: 100%;
+}
+.feature .forgot-password{
+    height: 20px;
+}
+.feature .forgot-password a{
+    line-height: 20px;
+    font-size: 12px;
+    font-family: SF Pro Display;
+    font-weight: 400;
+    text-decoration: none;
+    color: #007AFF;
+}
+.switcher{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.switcher label:last-child{
+    font-family: SF Pro Display;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #1A1A1A;
+}
+.swicht{
+    width: 40px !important;
+    height: 20px;
+    background-color: #F2F2F2;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    transition: 0.3s;
+    border: #E5E5E5;
+}
+.swicht::before{
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 40px;
+    top: 2px;
+    left: 2px;
+    transition: 0.3s;
+}
+#check{
+    display: none;
+}
+#check:checked + .swicht{
+    background-color: #2196F3;
+}
+#check:checked + .swicht::before{
+    transform: translateX(20px);
+}
+.btn-sign-in button{
+    background-color: #007AFF;
+    border: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.btn-or-sign-in button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #007AFF;
+    border: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-size: 15px;
+    font-family: SF Pro Display;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.btn-or-sign-in button i{
+    color: rgb(33, 203, 255);
+}
+.bottom-form{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    font-size: 12px;
+    font-family: SF Pro Display;
+    font-weight: 400;
+    color: #1A1A1A;
+}
+.bottom-form a{
+    text-decoration: none;
+    color: #007AFF;
+}
+@media (min-width: 1024px){
+
+}
+@media (min-width: 740px) and (max-width:1024px){
+    .img-login{
+        width: 60%;
+    }
+    .form{
+        width: 40%;
+        height: 100%;
+        padding: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+@media (max-width: 740px){
+    .img-login {
+        display: none;
+    }
+    .form{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    .form .top-form{
+        margin: 0 auto;
+    }
+}

@@ -9,7 +9,7 @@
     crossorigin="anonymous" 
     referrerpolicy="no-referrer" 
     />
-    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/login.css">
 </head>
 <body>
     <div class="container">
@@ -20,14 +20,18 @@
             <div class="form">
                 <div class="top-form">
                     <img src="./asset/img/42b431df4d2e7424df1d501beabb799a.png" alt="">
-                    <span>UI Unicorn</span>
+                    <span>Login</span>
                 </div>
                 <form action="" onsubmit="event.preventDefault()">
                     <div class="input-form">
                         <h3>Nice to see you again</h3>
                         <div class="item-input-form">
                             <div class="input-item">
-                                <label for="" class="input-label"> login </label>
+                                <label for="" class="input-label"> User </label>
+                                <input type="text" placeholder="User name" class="input-text" name="s">
+                            </div>
+                            <div class="input-item">
+                                <label for="" class="input-label"> Email </label>
                                 <input type="text" placeholder="Email or phone number" class="input-text">
                             </div>
                             <div class="input-item">
@@ -37,6 +41,7 @@
                                     <i class="fa-solid fa-eye eye-open" onclick="totalPassword()" style="display: none;"></i>
                                     <i class="fa-regular fa-eye-slash eye-close" onclick="totalPassword()"></i>
                                 </div>
+                                <p class="text-err"></p>
                             </div>
                             <div class="feature">
                                 <div class="switcher">
@@ -58,13 +63,14 @@
                         <button><i class="fa-brands fa-google"></i>Or sign in witch Google</button>
                     </div>
                     <div class="bottom-form">
-                        <span>Dont have an account?</span>
-                        <a href="">Sign up now</a>
+                        <span>No account yet? </span>
+                        <a href="./Register.html">Sign up now</a>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    <script src="./asset/js/login.js"></script>
     <script src="./asset/js/main.js"></script>
 </body>
 </html>
